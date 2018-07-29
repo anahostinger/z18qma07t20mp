@@ -1,0 +1,123 @@
+html{max-width:100%}
+
+/* Color Themes */
+.theme-l5 {color:#000 !important; background-color:#f0fbff !important}
+.theme-l4 {color:#000 !important; background-color:#ccf2ff !important}
+.theme-l3 {color:#000 !important; background-color:#99e6ff !important}
+.theme-l2 {color:#000 !important; background-color:#66d9ff !important}
+.theme-l1 {color:#fff !important; background-color:#33ccff !important}
+.theme-d1 {color:#fff !important; background-color:#00ace6 !important}
+.theme-d2 {color:#fff !important; background-color:#0099cc !important}
+.theme-d3 {color:#fff !important; background-color:#0086b3 !important}
+.theme-d4 {color:#fff !important; background-color:#007399 !important}
+.theme-d5 {color:#fff !important; background-color:#006080 !important}
+
+.theme-light {color:#000 !important; background-color:#f0fbff !important}
+.theme-dark {color:#fff !important; background-color:#006080 !important}
+.theme-action {color:#fff !important; background-color:#006080 !important}
+
+.theme {color:#fff !important; background-color:#00bfff !important}
+.text-theme {color:#00bfff !important}
+.border-theme {border-color:#00bfff !important}
+.text-theme-d3 {color:#0086b3 !important}
+.text-theme-dark {color:#006080 !important}
+
+.hover-theme:hover {color:#fff !important; background-color:#00bfff !important}
+.hover-text-theme:hover {color:#00bfff !important}
+.hover-border-theme:hover {border-color:#00bfff !important}
+
+/* Set Ripple Effect Button */
+.rips, .rips-dark{ position: relative; overflow:hidden }
+.ripple, .ripple-dark { position: absolute; background: rgba(255,255,255,.35); border-radius: 100%; 
+-webkit-transform: scale(0); -ms-transform: scale(0);transform: scale(0); pointer-events: none}
+.ripple.show, .ripple-dark.show { -webkit-animation: ripple .5s ease-out; animation: ripple .5s ease-out; }
+@-webkit-keyframes ripple { to { -webkit-transform: scale(1.5); transform: scale(1.5); opacity: 0; } }
+@keyframes ripple { to { -webkit-transform: scale(1.5); transform: scale(1.5); opacity: 0; } }
+.ripple-dark { background: rgba(0,0,0,.18) }
+button, .button, .btn { cursor:auto!important }
+
+/* Float Label Input */
+.group-float {position: relative;margin-bottom: 14px;margin-top:14px}
+.input-float:focus {outline: none}
+.lb-float {color: #999;font-weight: normal;position: absolute;pointer-events: none;left: 0px;top: 10px;transition: 0.2s ease all;-moz-transition: 0.2s ease all;-webkit-transition: 0.2s ease all}
+.input-float.in-date ~ label, .input-float.stop-floating ~ label, .input-float[type=file] ~ label, .input-float:focus ~ label, .input-float:valid ~ label 
+{top: -17px;font-size: 12px;color: #2e7d93}
+.bar-float {position: relative;display: block;width: 100%}
+.bar-float:before, .bar-float:after {content: '';height: 2px;width: 0;bottom: 1px;position: absolute;background: #2e7d93;transition: 0.2s ease all;-moz-transition: 0.2s ease all;-webkit-transition: 0.2s ease all}
+.bar-float:before{left: 50%}
+.bar-float:after {right: 50%}
+.input-float:focus ~ .bar-float:before, .input-float:focus ~ .bar-float:after {width: 50%}
+.input-float:focus ~ .highlight-float {-webkit-animation: inputHighlighter 0.3s ease;-moz-animation: inputHighlighter 0.3s ease;
+animation: inputHighlighter 0.3s ease}
+@-webkit-keyframes inputHighlighter {from {background: #5264AE}to {width: 0;background: transparent}}
+@-moz-keyframes inputHighlighter {from {background: #5264AE}to{width: 0;background: transparent}}
+@keyframes inputHighlighter {from {background: #5264AE}to {width: 0;background: transparent}}
+.gf-margin-32{margin-bottom: 35px;margin-top:35px}
+
+/* Other Set Custom Style*/
+.input{padding-left:0px;padding-right:0px}
+.button{ font-weight:bold }
+.padding-8{padding:8px!important}
+.padding-y-8{padding-top:8px!important;padding-bottom:8px!important}
+.padding-h-8{padding-left:8px;padding-right:8px}
+.animate-opacity-lost{animation:opaclost 0.3s}@keyframes opaclost{from{opacity:1} to{opacity:0}}
+.animate-left-lost{position:relative;animation:animateleftlost 0.3s}@keyframes animateleftlost{from{left:0;opacity:1} to{left:-300px;opacity:0}}
+.btn:hover{box-shadow:none}
+
+/* Home-Slide Tab CSS 33%*/
+.left-1-2{animation:left-1-2 0.2s;left:33.333%}@keyframes left-1-2{from{left:0%} to{left:33.333%}}
+.left-2-3{animation:left-2-3 0.2s;left:66.666%}@keyframes left-2-3{from{left:33.333%} to{left:66.666%}}
+.left-1-3{animation:left-1-3 0.4s;left:66.666%}@keyframes left-1-3{from{left:0%} to{left:66.666%}}
+.right-3-2{animation:right-3-2 0.2s;left:33.333%}@keyframes right-3-2{from{left:66.666%} to{left:33.333%}}
+.right-3-1{animation:right-3-1 0.4s;left:0%}@keyframes right-3-1{from{left:66.666%} to{left:0%}}
+.right-2-1{animation:right-2-1 0.2s;left:0%}@keyframes right-2-1{from{left:33.333%} to{left:0%}}
+.fleft-1-2{animation:fleft-1-2 0.2s;right:100%}@keyframes fleft-1-2{from{right:0%} to{right:100%}}
+.fleft-2-3{animation:fleft-2-3 0.2s;right:200%}@keyframes fleft-2-3{from{right:100%} to{right:200%}}
+.fleft-1-3{animation:fleft-1-3 0.4s;right:200%}@keyframes fleft-1-3{from{right:0%} to{right:200%%}}
+.fright-3-2{animation:fright-3-2 0.2s;right:100%}@keyframes fright-3-2{from{right:200%} to{right:100%}}
+.fright-3-1{animation:fright-3-1 0.4s;right:0%}@keyframes fright-3-1{from{right:200%} to{right:0%}}
+.fright-2-1{animation:fright-2-1 0.2s;right:0%}@keyframes fright-2-1{from{right:100%} to{right:0%}}
+
+/* Home Navbar In Out */ 
+.navbar-out{animation:navbarout 0.4s}@keyframes navbarout{from{top:0} to{top:-43px}}
+.navbar-in{animation:navbarin 0.4s}@keyframes navbarin{from{top:-45px} to{top:0}}
+
+
+body {font-family: 'Roboto', Arial, Tahoma, sans-serif;overflow-x:hidden}
+#sidebar{display:none;z-index:5;top:0px}
+.sidebar-width{width:270px}
+.nav-btn{width:53px;height:53px}
+#navbar2{color:#dfdfdf!important}
+#nav-sign{height:3px;position:relative;top:-0.5px}
+#content-home{position:relative;width:300%;margin-top:107px;}
+.content-off{visibility:hidden;max-height:1px;overflow-y:hidden}
+#sub-content-app-flash, #sub-content-app, #sub-sub-content-app, #sub-content-app-flash2{display:none;height:100%;width:100%;background-color:#fff;
+position:fixed!important;z-index:10;overflow:auto;top:0;left:0}.content-of-sub{margin-top:3px}.input{color:#215969 !important}
+
+/* sub-content-animator-1 */
+.move-out{position:relative;animation:moveout 0.4s}@keyframes moveout{from{left:0} to{left:-90px}}
+.sub-move-in{animation:sub-animate 0.4s}@keyframes sub-animate{from{left:220px} to{left:0}}
+.move-in{position:relative;animation:movein 0.4s}@keyframes movein{from{left:-90px} to{left:0}}
+.sub-move-out{animation:sub-animate-out 0.4s}@keyframes sub-animate-out{from{left:0} to{left:100%}}
+
+/* sub-content-animator-2 */
+.sub-bottom{position:relative;animation:subbottom 0.2s}@keyframes subbottom{from{top:120px;opacity:0} to{top:0;opacity:1}}
+.sub-bottom-off{position:relative;animation:subbottomoff 0.2s}@keyframes subbottomoff{from{top:0;opacity:1} to{top:120px;opacity:0}}
+
+/* flash-message */
+#flash-message{display:none;padding-top:110px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto}
+#flash-message .flash-content{margin:auto;background-color:#ccc;position:relative;padding:0;outline:0;width:200px}
+
+/* dropdown-click-float */
+.dropdown-click{cursor:auto}
+.overlay-float-menu{position:fixed;display:none;width:100%;height:100%;top:0;left:0;z-index:2}
+.dropdown-content{z-index:3}
+
+.text-gray-1{color:#555!important}
+.text-gray-2{color:#999!important}
+select, input{background-color:rgba(0,0,0,0)}
+
+.title-padding {padding: 8px 16px 8px 23px!important;}
+
+/*Auto complete div*/
+.flying-sub-content{display:none;position:absolute;margin-top:-32px;width:300px;z-index:3}
