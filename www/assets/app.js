@@ -20,7 +20,7 @@ function getVersionCode(onSuccess){
 		type: "get",
 		dataType: "text",
         success: onSuccess
-	}); 
+	});
 }
 function getX(link, sendData, onSuccess, dtType = "json"){
 	return $.ajax({
@@ -60,7 +60,7 @@ function getHtml(fileName, onSuccess=null){
         setLS("content-" + fileName, res)
         onSuccess(res);
     };
-	$.ajax({
+	return $.ajax({
 		url: firstUrl + "app_agen/js/" + fileName + ".php",
 		type: "get",
 		dataType: "text",
