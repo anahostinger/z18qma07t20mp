@@ -12,7 +12,7 @@
 <body class="light-gray" style="overflow-x:hidden">
     <div id="content-app">
         <form class="content section center padding-large">
-            <div class="section"><img src="img/logo.png" class="" style="width:197px;border-radius:50%"></div>
+            <div class="section"><img src="img/logo.png" class="" style="width:197px"></div>
             <div class="text-theme-d3">www.quickmart.co.id</div> 
             <div class="text-gray-2 small padding-8">&copy; &nbsp;2018</div> 
             <div class="section"><i class="la la-circle-o-notch la-spin text-theme-dark" style="font-size:25px"></i></div>
@@ -21,19 +21,10 @@
     <div id="sub-content-app-flash"></div>
     <div id="sub-content-app-flash2"></div>
 </body>
-<script src="assets/jquery-1.9.1.min.js"></script>
-<script src="assets/chartjs/Chart.bundle.min.js"></script>
-<script src="assets/chartjs/utils.js"></script>
-<script src="assets/app.js?80803"></script>
-<script src="cordova.js"></script>
-<script>
-$(document).ready(function(){
-    run(function(){
-        if(hasLogin())
-            set_content("home");
-        else
-            set_content("login");
-    });
-});
-</script>
+<script type="text/javascript" src="assets/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="assets/chartjs/Chart.bundle.min.js"></script>
+<script type="text/javascript" src="assets/chartjs/utils.js"></script>
+<script type="text/javascript" src="assets/app.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBim7iC0TGzy6m2BX_XJYCucOk7KhL5qt0&libraries=places&callback=fire_map"></script>
 </html>
